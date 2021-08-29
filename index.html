@@ -11,37 +11,47 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <header>
-      <nav class="nav-menu">
-        <a href="/" class="logo"
-          >Web<span class="logo-half-header">Studio</span></a
-        >
-        <ul class="nav-menu-list">
-          <li class="nav-menu-list-item current">
-            <a href="./index.html" class="nav-menu-link">Студия</a>
-          </li>
-          <li class="nav-menu-list-item">
-            <a href="./portfolio.html" class="nav-menu-link">Портфолио</a>
-          </li>
-          <li class="nav-menu-list-item">
-            <a href="#" class="nav-menu-link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="contacts">
-        <li class="header-contacts-item">
-          <a href="mailto:info@devstudio.com" class="contact-link"
-            >info@devstudio.com</a
+      <div class="container">
+        <div class="flex">
+          <a href="/" class="logo"
+            >Web<span class="logo-half-header">Studio</span></a
           >
-        </li>
-        <li class="contacts-item">
-          <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+          <nav class="nav-menu">
+            <ul class="nav-menu-list flex">
+              <li class="nav-menu-list-item current">
+                <a href="./index.html" class="nav-menu-link">Студия</a>
+              </li>
+              <li class="nav-menu-list-item">
+                <a href="./portfolio.html" class="nav-menu-link">Портфолио</a>
+              </li>
+              <li class="nav-menu-list-item">
+                <a href="#" class="nav-menu-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts flex">
+            <li class="header-contacts-item">
+              <a href="mailto:info@devstudio.com" class="contact-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-contacts-item">
+              <a href="tel:+380961111111" class="contact-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="promo section">
@@ -172,24 +182,26 @@
       </section>
     </main>
     <footer class="site-footer">
-      <a href="/" class="logo"
-        >Web<span class="logo-half-footer">Studio</span></a
-      >
-      <address class="footer-contacts">
-        <ul>
-          <li class="contact-address">г. Киев, пр-т Леси Украинки, 26</li>
-          <li class="contacts-item">
-            <a href="mailto:info@example.com" class="footer-contact-link"
-              >info@example.com</a
-            >
-          </li>
-          <li class="contacts-item">
-            <a href="tel:+380961111111" class="footer-contact-link"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <a href="/" class="logo"
+          >Web<span class="logo-half-footer">Studio</span></a
+        >
+        <address class="footer-contacts">
+          <ul>
+            <li class="contact-address">г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="contacts-item">
+              <a href="mailto:info@example.com" class="footer-contact-link"
+                >info@example.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a href="tel:+380961111111" class="footer-contact-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
