@@ -28,7 +28,7 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .section {
@@ -58,6 +58,12 @@ a {
   justify-content: flex-start;
   align-items: center;
 }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .nav-menu-list-item,
 .header-contacts-item {
   padding-top: 32px;
@@ -81,7 +87,9 @@ a {
 .current > .nav-menu-link {
   color: var(--accent-color);
 }
-
+.contacts {
+  margin-left: auto;
+}
 .contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -138,8 +146,11 @@ a {
 .promo {
   background-color: var(--secondary-bg-color);
 }
+}
 .promo-title {
+  max-width: 700px;
   font-weight: 900;
+  text-align: center;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
@@ -157,6 +168,12 @@ a {
 .promo-button:hover,
 .promo-button:focus {
   background-color: var(--accent-button-color);
+}
+.about-us-item {
+  display: inline;
+}
+.about-us-item:nth-child(n + 1) {
+  padding-left: 30px;
 }
 .about-us-title {
   font-weight: 700;
