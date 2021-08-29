@@ -8,6 +8,7 @@
   --secondary-white-color: rgba(255, 255, 255, 0.6);
   --accent-color: #18a0fb;
   --accent-button-color: #188ce8;
+  --primary-border-color: #ececec;
 }
 body {
   font-family: "Roboto", Arial, sans-serif;
@@ -78,6 +79,9 @@ img {
   color: var(--primary-text-color);
   text-align: center;
   margin-bottom: 50px;
+}
+.site-header {
+  border-bottom: 1px solid var(--primary-border-color);
 }
 .logo {
   font-family: Raleway, sans-serif;
@@ -180,6 +184,8 @@ img {
   color: var(--secondary-text-color);
 }
 .promo {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--secondary-bg-color);
 }
 .promo-title {
@@ -231,9 +237,16 @@ img {
 .our-team {
   background-color: var(--tertiary-bg-color);
 }
+.our-team-card {
+  border-radius: 0px 0px 4px 4px;
+}
+.our-team-list {
+  align-items: flex-start;
+}
 .our-team-card-footer {
   padding: 30px;
   text-align: center;
+  background-color: var(--primary-bg-color);
 }
 .our-team-card-title {
   font-weight: 500;
@@ -244,11 +257,18 @@ img {
 .our-team-card-description {
   line-height: 1.19;
   color: var(--secondary-text-color);
+  margin-bottom: auto;
 }
 .site-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
 .footer-contacts {
   font-style: normal;
   color: var(--primary-white-color);
+  margin-top: 20px;
+}
+.footer-contacts .contacts-item {
+  margin-top: 9px;
 }
