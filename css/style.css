@@ -19,6 +19,9 @@ body {
   background-color: var(--primary-bg-color);
   margin: 0;
 }
+* {
+  border: 0px dotted gray;
+}
 ul {
   list-style: none;
 }
@@ -64,6 +67,17 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.section:nth-child(3) {
+  padding-top: 0;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 50px;
 }
 .logo {
   font-family: Raleway, sans-serif;
@@ -165,12 +179,6 @@ img {
   line-height: 1.25;
   color: var(--secondary-text-color);
 }
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  color: var(--primary-text-color);
-}
 .promo {
   background-color: var(--secondary-bg-color);
 }
@@ -183,6 +191,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  margin-bottom: 40px;
 }
 .promo-button {
   font-weight: 700;
@@ -191,22 +200,28 @@ img {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  padding: 10px 32px;
 }
 .promo-button:hover,
 .promo-button:focus {
   background-color: var(--accent-button-color);
 }
-.about-us-item {
-  display: inline;
+.about-us-item,
+.what-we-do-item,
+.our-team-card {
+  margin-right: 30px;
 }
-.about-us-item:nth-child(n + 1) {
-  padding-left: 30px;
+.about-us-item:last-child,
+.what-we-do-item:last-child,
+.our-team-card:last-child {
+  margin-right: 0;
 }
 .about-us-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .about-us-description {
   font-size: 14px;
@@ -216,10 +231,15 @@ img {
 .our-team {
   background-color: var(--tertiary-bg-color);
 }
+.our-team-card-footer {
+  padding: 30px;
+  text-align: center;
+}
 .our-team-card-title {
   font-weight: 500;
   line-height: 1.19;
   color: var(--primary-text-color);
+  margin-bottom: 10px;
 }
 .our-team-card-description {
   line-height: 1.19;
