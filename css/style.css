@@ -9,6 +9,7 @@
   --accent-color: #18a0fb;
   --accent-button-color: #188ce8;
   --primary-border-color: #ececec;
+  --secondary-border-color: #eeeeee;
 }
 body {
   font-family: "Roboto", Arial, sans-serif;
@@ -158,12 +159,17 @@ img {
 .footer-contact-link:focus {
   color: var(--accent-color);
 }
+.filter-buttons {
+  margin-bottom: 50px;
+}
 .filter-button {
   font-weight: 500;
   line-height: 1.62;
   color: var(--primary-text-color);
   background-color: var(--tertiary-bg-color);
   cursor: pointer;
+  padding: 6px 22px;
+  margin-right: 8px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -172,12 +178,33 @@ img {
   background-color: var(--accent-color);
   cursor: pointer;
 }
+.portfolio-cards {
+  flex-wrap: wrap;
+}
+.portfolio-card {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-card:nth-child(3n + 3) {
+  margin-right: 0;
+}
+.portfolio-card:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+.portfolio-card-footer {
+  padding: 20px 24px;
+  border-top: 0;
+  border-right: 1px solid var(--secondary-border-color);
+  border-bottom: 1px solid var(--secondary-border-color);
+  border-left: 1px solid var(--secondary-border-color);
+}
 .portfolio-card-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2.25;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 .portfolio-card-description {
   line-height: 1.25;
@@ -211,6 +238,10 @@ img {
 .promo-button:hover,
 .promo-button:focus {
   background-color: var(--accent-button-color);
+}
+.current > .filter-button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 .about-us-item,
 .what-we-do-item,
