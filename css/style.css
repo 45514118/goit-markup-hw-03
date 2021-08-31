@@ -167,6 +167,8 @@ img {
   cursor: pointer;
   padding: 6px 22px;
   margin-right: 8px;
+  border: transparent;
+  border-radius: 4px;
 }
 .filter-button:hover,
 .filter-button:focus {
