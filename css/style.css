@@ -1,3 +1,4 @@
+/* Global */
 :root {
   --primary-bg-color: #fff;
   --secondary-bg-color: #2f303a;
@@ -63,6 +64,7 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
+/* Section */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -78,6 +80,7 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
+/* Header */
 .site-header {
   border-bottom: 1px solid var(--primary-border-color);
 }
@@ -95,6 +98,7 @@ img {
 .logo > .logo-half-footer {
   color: var(--primary-white-color);
 }
+/* Flex */
 .flex {
   display: flex;
   flex-wrap: nowrap;
@@ -107,6 +111,7 @@ img {
   justify-content: center;
   align-items: center;
 }
+/* Navigation */
 .nav-menu-list-item,
 .header-contacts-item {
   padding-top: 32px;
@@ -131,6 +136,7 @@ img {
 .current > .nav-menu-link {
   color: var(--accent-color);
 }
+/* Contacts */
 .contacts {
   margin-left: auto;
 }
@@ -156,6 +162,7 @@ img {
 .footer-contact-link:focus {
   color: var(--accent-color);
 }
+/* Filter */
 .filter-buttons {
   margin-bottom: 50px;
 }
@@ -177,6 +184,11 @@ img {
   background-color: var(--accent-color);
   cursor: pointer;
 }
+.current > .filter-button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+/* Portfolio */
 .portfolio-cards {
   flex-wrap: wrap;
 }
@@ -207,6 +219,7 @@ img {
   line-height: 1.25;
   color: var(--secondary-text-color);
 }
+/* Promo */
 .promo {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -238,10 +251,7 @@ img {
 .promo-button:focus {
   background-color: var(--accent-button-color);
 }
-.current > .filter-button {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
-}
+/* About Us */
 .about-us-item,
 .what-we-do-item,
 .our-team-card {
@@ -264,6 +274,7 @@ img {
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
+/* Our Team */
 .our-team {
   background-color: var(--tertiary-bg-color);
 }
@@ -289,6 +300,7 @@ img {
   color: var(--secondary-text-color);
   margin-bottom: auto;
 }
+/* Footer */
 .site-footer {
   padding-top: 60px;
   padding-bottom: 60px;
