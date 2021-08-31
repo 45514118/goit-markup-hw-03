@@ -189,11 +189,9 @@ img {
   margin-bottom: 0;
 }
 .portfolio-card-footer {
-  padding: 20px 23px;
+  padding: 20px 24px;
   border-top: 0;
-  border-right: 1px solid var(--secondary-border-color);
-  border-bottom: 1px solid var(--secondary-border-color);
-  border-left: 1px solid var(--secondary-border-color);
+  border: 1px solid var(--secondary-border-color);
 }
 .portfolio-card-title {
   font-weight: 700;
