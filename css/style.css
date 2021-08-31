@@ -21,9 +21,6 @@ body {
   background-color: var(--primary-bg-color);
   margin: 0;
 }
-* {
-  border: 0px dotted gray;
-}
 ul {
   list-style: none;
 }
@@ -192,7 +189,7 @@ img {
   margin-bottom: 0;
 }
 .portfolio-card-footer {
-  padding: 20px 24px;
+  padding: 20px 23px;
   border-top: 0;
   border-right: 1px solid var(--secondary-border-color);
   border-bottom: 1px solid var(--secondary-border-color);
