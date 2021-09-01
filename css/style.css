@@ -13,7 +13,7 @@
   --secondary-border-color: #eeeeee;
 }
 body {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -114,8 +114,6 @@ img {
 /* Navigation */
 .nav-menu-list-item,
 .header-contacts-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: 50px;
 }
 .nav-menu-list-item:first-child,
@@ -123,11 +121,14 @@ img {
   margin-left: 0;
 }
 .nav-menu-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-menu-link:hover,
 .nav-menu-link:focus {
@@ -226,6 +227,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--secondary-bg-color);
+  text-align: center;
 }
 .promo-title {
   max-width: 700px;
@@ -236,7 +238,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
 }
 .promo-button {
   font-weight: 700;
