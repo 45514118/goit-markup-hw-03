@@ -102,13 +102,6 @@ img {
 .flex {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 /* Navigation */
@@ -166,6 +159,10 @@ img {
 /* Filter */
 .filter-buttons {
   margin-bottom: 50px;
+  justify-content: center;
+}
+.filter-button-item {
+  margin-right: 8px;
 }
 .filter-button {
   font-weight: 500;
@@ -174,7 +171,6 @@ img {
   background-color: var(--tertiary-bg-color);
   cursor: pointer;
   padding: 6px 22px;
-  margin-right: 8px;
   border: transparent;
   border-radius: 4px;
 }
@@ -196,6 +192,7 @@ img {
 .portfolio-card {
   margin-right: 30px;
   margin-bottom: 30px;
+  width: 370px;
 }
 .portfolio-card:nth-child(3n + 3) {
   margin-right: 0;
@@ -205,10 +202,8 @@ img {
 }
 .portfolio-card-footer {
   padding: 20px 24px;
-  border-top: 0;
-  border-bottom: 1px solid var(--secondary-border-color);
-  border-left: 1px solid var(--secondary-border-color);
-  border-right: 1px solid var(--secondary-border-color);
+  border: 1px solid var(--secondary-border-color);
+  border-top: none;
 }
 .portfolio-card-title {
   font-weight: 700;
@@ -261,6 +256,9 @@ img {
 .our-team-card {
   margin-right: 30px;
 }
+.about-us-item {
+  width: 270px;
+}
 .about-us-item:last-child,
 .what-we-do-item:last-child,
 .our-team-card:last-child {
@@ -284,6 +282,7 @@ img {
 }
 .our-team-card {
   border-radius: 0px 0px 4px 4px;
+  width: 270px;
 }
 .our-team-list {
   align-items: flex-start;
