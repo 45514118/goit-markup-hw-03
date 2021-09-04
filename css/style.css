@@ -164,6 +164,9 @@ img {
 .filter-button-item {
   margin-right: 8px;
 }
+.filter-button-item:last-child {
+  margin-right: 0;
+}
 .filter-button {
   font-weight: 500;
   line-height: 1.62;
@@ -314,6 +317,7 @@ img {
   color: var(--primary-white-color);
   margin-top: 20px;
 }
-.footer-contacts .contacts-item {
+.contacts-list,
+.footer-contacts .contacts-item:last-child {
   margin-top: 9px;
 }
